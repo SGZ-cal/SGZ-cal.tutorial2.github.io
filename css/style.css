@@ -1,0 +1,324 @@
+@charset "UTF-8";
+* {
+  font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+  height: 60px;
+  line-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.header-container li {
+  margin-right: 20px;
+}
+
+.header-container li:last-child {
+  margin-right: 0;
+}
+
+.header-container a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.header-container a:hover {
+  opacity: 0.7;
+}
+
+.keyvisual {
+  height: 600px;
+  /* 背景に画像を挿入する */
+  background-image: url(../img/digital-rose.jpg);
+  background-repeat: none;
+  background-size: cover;
+  /*表示サイズの依存先*/
+  background-position: center;
+  /*表示場所*/
+}
+
+.keyvisual-container {
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.keyvisual-container h1 {
+  font-weight: bold;
+  font-size: 80px;
+  margin-bottom: 30px;
+}
+
+.keyvisual-container h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.keyvisual-container .keyvisual-descriotion {
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+
+.keyvisual-container .keyvisual-data {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.keyvisual-container .keyvisual-place {
+  font-size: 18px;
+}
+
+.about {
+  background-image: url(../img/digital-rose.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.about-container {
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+  line-height: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-container h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.news {
+  background-image: url(../img/digital-rose.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.news-container {
+  padding: 80px 0;
+}
+
+.news-container h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.news-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.news-container li {
+  width: 300px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  margin-right: 20px;
+  border-radius: 3px;
+}
+
+.news-container li:last-child {
+  margin-right: 0;
+}
+
+.news-container li p {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.news-container .news-image {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+  background-color: #ddd;
+}
+
+.video {
+  background-image: url(../img/digital-rose.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.video-container {
+  padding: 80px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video-container h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.video-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+.video-container li {
+  width: 400px;
+  height: 200px;
+  margin-right: 20px;
+}
+
+.video-container li:last-child {
+  margin-right: 0;
+}
+
+.video-container li iframe {
+  width: 400px;
+  height: 200px;
+}
+
+.history {
+  background-image: url(../img/digital-rose.jpg);
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.history-container {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.history-container h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.history-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.history-container a {
+  display: block;
+  width: 200px;
+  height: 150px;
+  line-height: 150px;
+  background-color: #0f22c7;
+  border-radius: 3px;
+  margin-right: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.history-container a:hover {
+  opacity: 0.8;
+}
+
+.history-container .history-image {
+  color: #fff;
+}
+
+.history-container li:last-child {
+  margin-right: 0;
+}
+
+.access {
+  background-color: #111;
+}
+
+.access-container h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.access-container .access-map {
+  width: 100%;
+  height: 500px;
+}
+
+.access-container .access-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 80px;
+  line-height: 80px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */
