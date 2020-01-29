@@ -23,6 +23,12 @@ header {
   margin: 0 auto;
 }
 
+.header-container a img {
+  height: 50px;
+  max-width: 100px;
+  margin-top: 5px;
+}
+
 .header-container ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,6 +64,7 @@ header {
   /*表示サイズの依存先*/
   background-position: center;
   /*表示場所*/
+  background-color: #fff;
 }
 
 .keyvisual-container {
@@ -76,7 +83,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
-  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+  text-shadow: 0 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .keyvisual-container h1 {
@@ -117,7 +124,7 @@ header {
   text-align: center;
   padding: 80px 0;
   line-height: 28px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -128,18 +135,18 @@ header {
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-.news {
+.members {
   background-image: url(../img/digital-rose.jpg);
   background-repeat: none;
   background-size: cover;
   background-position: center;
 }
 
-.news-container {
+.member-container {
   padding: 80px 0;
 }
 
-.news-container h2 {
+.member-container h2 {
   color: #fff;
   font-size: 30px;
   font-weight: bold;
@@ -148,17 +155,21 @@ header {
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
 
-.news-container ul {
+.member-container ul {
   display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  list-style-type: none;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 0 12px 8px;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  list-style-type: none;
 }
 
-.news-container li {
+.member-container li {
   width: 300px;
   text-align: center;
   background-color: #eee;
@@ -167,16 +178,16 @@ header {
   border-radius: 3px;
 }
 
-.news-container li:last-child {
+.member-container li:last-child {
   margin-right: 0;
 }
 
-.news-container li p {
+.member-container li p {
   padding-top: 10px;
   font-size: 16px;
 }
 
-.news-container .news-image {
+.member-container .member-image {
   width: 280px;
   height: 280px;
   margin: 0 auto;
@@ -194,10 +205,10 @@ header {
   padding: 80px 0;
   max-width: 1000px;
   margin: 0 auto;
+  color: #fff;
 }
 
 .video-container h2 {
-  color: #fff;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -206,10 +217,8 @@ header {
 }
 
 .video-container p {
-  font-size: 14px;
-  color: #fff;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .video-container ul {
@@ -224,7 +233,7 @@ header {
 
 .video-container li {
   width: 400px;
-  height: 200px;
+  height: 230px;
   margin-right: 20px;
 }
 
@@ -234,7 +243,7 @@ header {
 
 .video-container li iframe {
   width: 400px;
-  height: 200px;
+  height: 230px;
 }
 
 .history {
@@ -242,11 +251,12 @@ header {
   background-repeat: none;
   background-size: cover;
   background-position: center;
+  padding-bottom: 30px;
 }
 
 .history-container {
   width: 100%;
-  padding-bottom: 30px;
+  padding: 30px auto;
 }
 
 .history-container h2 {
@@ -254,6 +264,7 @@ header {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  padding-top: 20px;
   margin-bottom: 30px;
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
@@ -275,7 +286,7 @@ header {
   width: 200px;
   height: 150px;
   line-height: 150px;
-  background-color: #0f22c7;
+  background-color: #53565e;
   border-radius: 3px;
   margin-right: 20px;
   font-size: 22px;
@@ -306,7 +317,7 @@ header {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  padding: 10px 0;
   text-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
 }
 
